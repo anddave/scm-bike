@@ -1,0 +1,11 @@
+handlebar
+    II                seat
+   frame-frame-frame-frame
+      frame         frame
+         frame     frame
+            frame-frame
+              pedals
+   wheels              wheels
+wheels-wheels       wheels-wheels
+wheels-wheels       wheels-wheels
+   wheels              wheels
