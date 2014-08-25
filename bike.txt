@@ -5,7 +5,7 @@ handlebar
          frame     frame
             frame-frame
               pedals
-   wheels              wheels
-wheels-wheels       wheels-wheels
-wheels-wheels       wheels-wheels
-   wheels              wheels
+    front               rear
+front---wheel       rear----wheel
+front---wheel       rear----wheel
+    front               rear
