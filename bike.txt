@@ -1,5 +1,6 @@
 handlebar
     II                seat
+basket	II	II
    frame-frame-frame-frame
       frame         frame
          frame     frame
