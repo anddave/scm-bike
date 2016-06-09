@@ -9,9 +9,9 @@
                             I
                             I
                            I
-handlebar                  I    
-    II                seat]I[
-basket	II	II
+    handlebar              I    
+        II            seat]I[
+basket	II		II
    frame-frame-frame-frame
       frame         frame
          frame     frame
