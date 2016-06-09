@@ -1,5 +1,16 @@
-handlebar
-    II                seat
+
+
+                             O
+                             +Flag
+                             I FlagFla
+                             +Flag    g
+                             I
+                             I
+                            I
+                            I
+                           I
+handlebar                  I    
+    II                seat]I[
 basket	II	II
    frame-frame-frame-frame
       frame         frame

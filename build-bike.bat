@@ -1,5 +1,6 @@
 @del bike.txt
 
+@type flag.txt >> bike.txt
 @type handlebar.txt >> bike.txt
 @type seat.txt >> bike.txt
 @type basket.txt >> bike.txt
