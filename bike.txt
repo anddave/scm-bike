@@ -1,29 +1,29 @@
 
 
-                             O
-                             +Flag
-                             I FlagFla
-                             +Flag    g
-                             I
-                             I
-                            I
-                            I
-                           I
-       handlebar           I    
-b    t  II            seat]I[
- aske 	II		II
-   frame-frame-frame-frame
-      frame         frame
-         frame     frame
-            frame-frame
-      frame         frame
-    ntw                 r w   
-  o  | he   ped       a  | he
- r  \|/  e    \      e  \|/  e
-F--<>O<>--l    O    R--<>O<>--l
- r  /|\  e      \    e  /|\  e
-  o  | he       als   a  | he
-    ntw                 r w
+                                         O
+                                         +Flag
+                                         I FlagFla
+                                         +Flag    g
+                                         I
+                                        I
+                                        I
+                                       I
+                                       I
+       handlebar                       I    
+b    t  II                        seat]I[
+ aske 	II                          II
+   frameframeframeframeframeframeframe
+      frame         frame       frame
+         frame     frame      frame
+           frame-frame-frame-frame
+      frame                    frame
+    ntw                         r w   
+  o  | he   ped     ped       a  | he
+ r  \|/  e    \       \      e  \|/  e
+F--<>O<>--l    O       O    R--<>O<>--l
+ r  /|\  e      \       \    e  /|\  e
+  o  | he       als     als   a  | he
+    ntw                         r w
 
 
 
