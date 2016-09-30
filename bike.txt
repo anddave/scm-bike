@@ -15,15 +15,15 @@ b    t  II            seat]I[
    frame-frame-frame-frame
       frame         frame
          frame     frame
-            frame-frame
-      frame         frame
-    ntw                 r w   
-  o  | he   ped       a  | he
- r  \|/  e    \      e  \|/  e
-F--<>O<>--l    O    R--<>O<>--l
- r  /|\  e      \    e  /|\  e
-  o  | he       als   a  | he
-    ntw                 r w
+            frame-frame-trailer-trailer-trailer
+      frame         frame               trailer
+    ntw                 r w             trailer
+  o  | he   ped       a  | he           trailer
+ r  \|/  e    \      e  \|/  e          trailer
+F--<>O<>--l    O    R--<>O<>--l           ooo
+ r  /|\  e      \    e  /|\  e           oo oo
+  o  | he       als   a  | he            oo oo
+    ntw                 r w               ooo 
 
 
 
