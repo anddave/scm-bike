@@ -1,3 +1,13 @@
+if ($args.length -gt 0) {
+	$validcolors = [enum]::GetValues([System.ConsoleColor])
+	$c = $args[0]
+	if (-not ($c -in $validcolors)) {
+		write-error "Unknown color: $($c), here are the valid colors..."
+		$validcolors | Foreach-Object {Write-Host $_ -ForegroundColor $_}
+		$c = $null
+	}
+}
+
 #get-content bike.txt | foreach {
 #	$line=$_
 $longest=0
@@ -22,4 +32,11 @@ foreach ($line in (get-content bike.txt)) {
 	#$ml
 	$ml | add-content mirror-bike.txt
 }
-get-content mirror-bike.txt
+
+get-content mirror-bike.txt | foreach {
+	if ($c) {
+		write-host -foregroundcolor $c  $_
+	} else {
+		write-host $_
+	}
+}

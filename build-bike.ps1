@@ -1,25 +1,17 @@
-cmd.exe /c build-bike
-# SIG # Begin signature block
-# MIIEFgYJKoZIhvcNAQcCoIIEBzCCBAMCAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
-# gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR
-# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUPXrDfPHtf0+SfAVyPxPTBj3z
-# e/OgggIrMIICJzCCAZSgAwIBAgIQy9ax3Sb+qLZBz857igSt8TAJBgUrDgMCHQUA
-# MCExHzAdBgNVBAMTFkZHU0NNIENlcnRpZmljYXRlIFJvb3QwHhcNMTMwNTEwMDMz
-# MTUzWhcNMzkxMjMxMjM1OTU5WjAeMRwwGgYDVQQDExNGaWVsZGdsYXNzIFNDTSBU
-# ZWFtMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvAEiE5jXCRzkTh2IDl/aZ
-# xgz+WQXFGGPWrrRzbDSDZwuWPbLiucq+yQBAGBP/haXFB83IA57IoWvMTy3isdct
-# rF2jmfP1w07+jxjFfcQqzLj+BiiilMU1OgORYPOXvljzMSmBXvbOnqq88aiWQAfk
-# e57nzsia/XGsONQqhRk90wIDAQABo2swaTATBgNVHSUEDDAKBggrBgEFBQcDAzBS
-# BgNVHQEESzBJgBCi8gmQAgKpksW9geGbgdQPoSMwITEfMB0GA1UEAxMWRkdTQ00g
-# Q2VydGlmaWNhdGUgUm9vdIIQo8aq9BPbFZ5B4a0Hya2REDAJBgUrDgMCHQUAA4GB
-# AK47y7/fQG9Ut1zI65ZoFGnWTxdvaBQYG4S2TKFiPSoLhcQZIhF4R6ygMFQFCalA
-# baR6rHOOmRefdLJNwwYhDmilL46Tiv5UMhimjAT7HH/jUb0iRfsqXC8iMgIqYVvb
-# ZRmbwhuDn2mEVIXkmdmfcQE5k7Qe6DEQY/Wrz4/u3Ow1MYIBVTCCAVECAQEwNTAh
-# MR8wHQYDVQQDExZGR1NDTSBDZXJ0aWZpY2F0ZSBSb290AhDL1rHdJv6otkHPznuK
-# BK3xMAkGBSsOAwIaBQCgeDAYBgorBgEEAYI3AgEMMQowCKACgAChAoAAMBkGCSqG
-# SIb3DQEJAzEMBgorBgEEAYI3AgEEMBwGCisGAQQBgjcCAQsxDjAMBgorBgEEAYI3
-# AgEVMCMGCSqGSIb3DQEJBDEWBBS/NsfRbA7IPX4ubE0qhVnn3kYLmDANBgkqhkiG
-# 9w0BAQEFAASBgIcK5OFplhd8oNlihmnWJrXmPMeK+Uf6tJBNfaqhKLK5f4H8CVWG
-# R8gr7P9WA91QoIGojzpwH8Dub3Z2O/cqCjEVj6HNb41+3BAzSrAeJGO1JsnQuub7
-# MlEpiSV9k30Fv/UpFYDYFDKRue9NlQfPwy0Z3kLvVdV2hKBBOPDLCVRR
-# SIG # End signature block
+if ($args.length -gt 0) {
+	$validcolors = [enum]::GetValues([System.ConsoleColor])
+	$c = $args[0]
+	if (-not ($c -in $validcolors)) {
+		write-error "Unknown color: $($c), here are the valid colors..."
+		$validcolors | Foreach-Object {Write-Host $_ -ForegroundColor $_}
+		$c = $null
+	}
+}
+$bike = cmd.exe /c build-bike
+foreach ($b in $bike) {
+	if ($c) {
+		write-host -foregroundcolor $c  $b
+	} else {
+		write-host $b
+	}
+}
